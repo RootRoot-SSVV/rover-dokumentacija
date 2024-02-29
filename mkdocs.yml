@@ -1,0 +1,48 @@
+site_name: ROVER
+nav:
+  - Početna: index.md
+  - Način rada: nacin_rada.md
+  - Tehnička dokumentacija: tehnicka_dokumentacija.md
+  - Stvaranje modula: stvaranje_modula.md
+  - Budućnost: buducnost.md
+theme:
+  logo: assets/logo.png
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: hr
+  palette:
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Switch to dark mode
+      primary: blue
+      accent: dark-blue 
+    - scheme: default 
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode    
+      primary: blue
+      accent: dark-blue
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - attr_list
