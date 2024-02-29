@@ -32,7 +32,7 @@ theme:
         name: Switch to light mode    
       primary: blue
       accent: dark-blue
-
+repo_url: https://github.com/RootRoot-SSVV/rover
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
