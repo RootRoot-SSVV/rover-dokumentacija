@@ -1,0 +1,1159 @@
+
+<!doctype html>
+<html lang="hr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../nacin_rada/">
+      
+      
+        <link rel="next" href="../stvaranje_modula/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.12">
+    
+    
+      
+        <title>Tehnička dokumentacija - ROVER</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e359304.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="dark-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tehnicka-dokumentacija" class="md-skip">
+          Preskoči na sadržaj
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Zaglavlje">
+    <a href=".." title="ROVER" class="md-header__button md-logo" aria-label="ROVER" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ROVER
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Tehnička dokumentacija
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="dark-blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="dark-blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Pretraži" placeholder="Pretraži" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pretraživanje">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Očisti" aria-label="Očisti" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicijaliziranje pretraživanja
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/RootRoot-SSVV/rover" title="Idi u repozitorij" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Kartice" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Početna
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../nacin_rada/" class="md-tabs__link">
+        
+  
+    
+  
+  Način rada
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+    
+  
+  Tehnička dokumentacija
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../stvaranje_modula/" class="md-tabs__link">
+        
+  
+    
+  
+  Stvaranje modula
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../buducnost/" class="md-tabs__link">
+        
+  
+    
+  
+  Budućnost
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigacija" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="ROVER" class="md-nav__button md-logo" aria-label="ROVER" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    ROVER
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/RootRoot-SSVV/rover" title="Idi u repozitorij" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Početna
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nacin_rada/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Način rada
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Tehnička dokumentacija
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Tehnička dokumentacija
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Sadržaj">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Sadržaj
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#softver" class="md-nav__link">
+    <span class="md-ellipsis">
+      Softver
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Softver">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lista-znacajki-aplikacije" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lista značajki aplikacije
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lista značajki aplikacije">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pocetni-ekran" class="md-nav__link">
+    <span class="md-ellipsis">
+      Početni ekran
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upravljanje" class="md-nav__link">
+    <span class="md-ellipsis">
+      Upravljanje
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moduli" class="md-nav__link">
+    <span class="md-ellipsis">
+      Moduli
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Moduli">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#demo-modul" class="md-nav__link">
+    <span class="md-ellipsis">
+      Demo modul
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matrix-modul" class="md-nav__link">
+    <span class="md-ellipsis">
+      Matrix modul
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ultrasonicni-modul" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ultrasonični modul
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sistemska-konfiguracija" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sistemska konfiguracija
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sistemska konfiguracija">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#preporucena-sistemska-konfiguracija-za-mobilne-ureaje" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preporučena sistemska konfiguracija za mobilne uređaje
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preporucena-sistemska-konfiguracija-za-racunala" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preporučena sistemska konfiguracija za računala
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#potreban-softver" class="md-nav__link">
+    <span class="md-ellipsis">
+      Potreban  softver
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Potreban softver">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      Windows
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linux" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linux
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#macos" class="md-nav__link">
+    <span class="md-ellipsis">
+      MacOS
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tehnologije" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tehnologije
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#optimizacija" class="md-nav__link">
+    <span class="md-ellipsis">
+      Optimizacija
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#instalacija-aplikacije" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalacija aplikacije
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sigurnost" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sigurnost
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hardver" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hardver
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hardver">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#popis-djelova-i-tehnologija" class="md-nav__link">
+    <span class="md-ellipsis">
+      Popis djelova i tehnologija
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#elektronicke-sheme" class="md-nav__link">
+    <span class="md-ellipsis">
+      Elektroničke sheme
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Elektroničke sheme">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#glavna-shema" class="md-nav__link">
+    <span class="md-ellipsis">
+      Glavna shema
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#demo-modul_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Demo modul
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matrix-modul_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Matrix modul
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ultrasonicni-modul_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ultrasonični modul
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pcb" class="md-nav__link">
+    <span class="md-ellipsis">
+      PCB
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PCB">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#glavni-pcb" class="md-nav__link">
+    <span class="md-ellipsis">
+      Glavni PCB
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#demo-modul_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Demo modul
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matrix-modul_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Matrix modul
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ultrasonicni-modul_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ultrasonični modul
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3d-modeli" class="md-nav__link">
+    <span class="md-ellipsis">
+      3D modeli
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3D modeli">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rover-bez-modula" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rover bez modula
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rover-sa-modulima" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rover sa modulima
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ultrasonicni-modul_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ultrasonični modul
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#demo-modul_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Demo modul
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matrix-modul_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Matrix modul
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proces-izrade" class="md-nav__link">
+    <span class="md-ellipsis">
+      Proces izrade
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Proces izrade">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prva-faza-izrada-mobilne-aplikacije" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prva faza: izrada mobilne aplikacije
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#druga-faza-izrada-upravljackog-koda-na-raspberry-pi-pico-u" class="md-nav__link">
+    <span class="md-ellipsis">
+      Druga faza: izrada upravljačkog koda na Raspberry Pi Pico-u
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#treca-faza-zrada-elektronickih-shema-i-dizajn-pcb-a" class="md-nav__link">
+    <span class="md-ellipsis">
+      Treća faza: zrada elektroničkih shema i dizajn PCB-a
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cetvrta-faza-3d-modeliranje" class="md-nav__link">
+    <span class="md-ellipsis">
+      Četvrta faza: 3D modeliranje
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zavrsni-proizvod" class="md-nav__link">
+    <span class="md-ellipsis">
+      Završni proizvod
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stvaranje_modula/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stvaranje modula
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../buducnost/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Budućnost
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="tehnicka-dokumentacija">Tehnička dokumentacija</h1>
+<h2 id="softver">Softver</h2>
+<h3 id="lista-znacajki-aplikacije">Lista značajki aplikacije</h3>
+<h4 id="pocetni-ekran">Početni ekran</h4>
+<ul>
+<li>Skeniranje i spajanje s vozilom</li>
+<li>Prikaz informacija o aplikaciji</li>
+<li>Prijevod</li>
+</ul>
+<h4 id="upravljanje">Upravljanje</h4>
+<ul>
+<li>Skeniranje spojenih modula</li>
+<li>Upravljanje kretanja vozila</li>
+<li>Upravljanje različitih modula</li>
+</ul>
+<h4 id="moduli">Moduli</h4>
+<h5 id="demo-modul">Demo modul</h5>
+<ul>
+<li>Upravljanje 3 jednobojne LED diode</li>
+<li>Upravljanje RGB diode</li>
+<li>Upravljanje zujalice</li>
+</ul>
+<h5 id="matrix-modul">Matrix modul</h5>
+<ul>
+<li>Upravljanje matrix ekrana aplikacijom i serijskim prijenosom</li>
+<li>Crtanje oblika na matrici</li>
+</ul>
+<h5 id="ultrasonicni-modul">Ultrasonični modul</h5>
+<ul>
+<li>Ulazno izlazna mogućnost podataka</li>
+<li>Prikaz udaljenosti</li>
+</ul>
+<h3 id="sistemska-konfiguracija">Sistemska konfiguracija</h3>
+<p>Neće svi uređaji biti u stanju upotrebljavati ovu aplikaciju. Navedeno je više sistemskih konfiguracija, jedna za mobitele te je jedna za računala. Konfiguracija za računala je potrebna samo ako mislite stvarati module.</p>
+<h4 id="preporucena-sistemska-konfiguracija-za-mobilne-ureaje">Preporučena sistemska konfiguracija za mobilne uređaje</h4>
+<ul>
+<li>Mobilni uređaj ili tablet s operacijskim sustavom Android</li>
+<li>RAM memorija 4 GB</li>
+<li>30 MB slobodnog prostora (1 GB slobodnog prostora za razvoj modula)</li>
+<li>Bluetooth Classic</li>
+</ul>
+<h4 id="preporucena-sistemska-konfiguracija-za-racunala">Preporučena sistemska konfiguracija za računala</h4>
+<ul>
+<li>Procesor s 4 jezgre i radnim taktom 3 GHz</li>
+<li>RAM memorija 8 GB</li>
+<li>10 GB ili više slobodnog prostora</li>
+<li>Operacijski sustav Windows, Linux ili MacOS</li>
+</ul>
+<h4 id="potreban-softver">Potreban  softver</h4>
+<h5 id="windows">Windows</h5>
+<ul>
+<li>Android Studio</li>
+<li>Flutter SDK</li>
+<li>Raspberry Pi Pico C/C++ SDK</li>
+<li>Visual Studio Code</li>
+</ul>
+<h5 id="linux">Linux</h5>
+<ul>
+<li>Android Studio</li>
+<li>Flutter SDK</li>
+<li>Raspberry Pi Pico C/C++ SDK</li>
+<li>Visual Studio Code</li>
+<li>CMake</li>
+<li>GNU GCC</li>
+</ul>
+<h5 id="macos">MacOS</h5>
+<ul>
+<li>Android Studio</li>
+<li>Flutter SDK</li>
+<li>Raspberry Pi Pico C/C++ SDK</li>
+<li>Visual Studio Code</li>
+<li>CMake</li>
+<li>GNU GCC</li>
+</ul>
+<h3 id="tehnologije">Tehnologije</h3>
+<p>Projekt ROVER napravljen je pomoću više tehnologija. Odabrane su tehnologije koje su popularne, često održavane i jednostavne za naučiti. Za samu aplikaciju smo koristili Flutter. To je open-source SDK (software development kit) napravljen od strane Google-a. Koristi se za programiranje brzih cross-platform aplikacija. Unatoč tome ova aplikacija se koristi samo na android uređajima jer iOS nema mogućnost korištenja Bluetooth Classic. Za programiranje logike i UI-a se koristi Dart programski jezik. Mikroupravljač koji smo koristili je bio Raspberry Pi Pico. On ima mogućnost programirati se u Micropythonu ili C/C++ pomoću SDK-a. Odabrali smo programirati u C-u jer je to programski jezik s kojim smo upoznati i u usporedbi s Micropythonom je puno brži. GitHub koristimo za kontrolu verzije. Napravili smo organizaciju u kojoj smo stavili repozitorije projekta.</p>
+<h3 id="optimizacija">Optimizacija</h3>
+<p>Uložen je dodatan trud u optimizaciju ROVERA, i sa strane aplikacije i mikroupravljač. Putem bluetooth-a komunicira slanjem već dogovorenim formatom poruke. Aplikacija je pisana asinkrono, što ubrzava aplikaciju posebice u djelovima slanja i primanja poruka.</p>
+<h3 id="instalacija-aplikacije">Instalacija aplikacije</h3>
+<p>Trenutno postoji dva načina za instaliranje aplikacije. Ako ne planirate nadograditi ROVER ili njegovu aplikaciju, preporučuje se preuzimanje APK datoteke s GitHub repozitorija. No, ako želite modificirati aplikaciju ili ROVER, preporučuje se kloniranje repozitorija na računalo i otvaranje projekta u razvojnom okruženju poput VSCode-a ili Android Studija. Kada je u pitanju učitavanje koda na mikroupravljač, postupak je sljedeći: klonirate repozitorij i prenesete main.uf2 datoteku na mikroupravljač. Kod se prenosi tako da tijekom spajanja Raspberry Pi Pico putem USB-a držite BOOTSEL gumb. Na računalu će se pojaviti nova jedinica za pohranu na koju ćete kopirati main.uf2 datoteku.</p>
+<h3 id="sigurnost">Sigurnost</h3>
+<p>Sigurnost ove aplikacije je potpuno zajamčena jer ne koristi nikakve online servise. Također, i pristupni podaci i algoritmi korišteni za komunikaciju su sigurni, a provjerava se i točnost formata. U slučaju netočnih formata, neće se dogoditi nikakav neželjeni ishod. Dodatno, budući da je cijeli kod otvorenog koda (open-source), korisnici imaju potpunu transparentnost i mogu proučiti svaki dio prije instalacije.</p>
+<h2 id="hardver">Hardver</h2>
+<h3 id="popis-djelova-i-tehnologija">Popis djelova i tehnologija</h3>
+<ul>
+<li>Mikroupravljač - Raspberry Pi Pico, koji omogućuje programiranje u C/C++</li>
+<li>Motor - JGA25-370 motor na 12V 100RPM x4</li>
+<li>Upravljač motora BTS7960B x2</li>
+<li>Komunikacijski modul – HC-05 (Bluetooth Classic)</li>
+<li>Komponente - SN74AC245N x2, SN74AC244N x1, SN74AC04N x3, SN74HC11N x3,
+LD1117V33 x3, 1kΩ resistor x2, LED diode x3, header pins, LM2596 buck-converter x1,
+LM2940-5 x1</li>
+<li>Senzori i dodatni djelovi - 8x8 Matrix, Buzzer, Ultrasonic sensor</li>
+<li>Napajanje 12V baterija</li>
+<li>3D modeli</li>
+</ul>
+<h3 id="elektronicke-sheme">Elektroničke sheme</h3>
+<h4 id="glavna-shema">Glavna shema</h4>
+<p><img alt="Glavna shema" src="../assets/tehnicka_dokumentacija/main_sheme.png" /></p>
+<h4 id="demo-modul_1">Demo modul</h4>
+<p><img alt="Demo modul" src="../assets/tehnicka_dokumentacija/demo_sheme.png" /></p>
+<h4 id="matrix-modul_1">Matrix modul</h4>
+<p><img alt="Matrix modul" src="../assets/tehnicka_dokumentacija/matrix_sheme.png" /></p>
+<h4 id="ultrasonicni-modul_1">Ultrasonični modul</h4>
+<p><img alt="Ultrasonični modul" src="../assets/tehnicka_dokumentacija/us_sheme.png" /></p>
+<h3 id="pcb">PCB</h3>
+<h4 id="glavni-pcb">Glavni PCB</h4>
+<p><img alt="Glavni PCB" src="../assets/tehnicka_dokumentacija/main_pcb.png" /></p>
+<h4 id="demo-modul_2">Demo modul</h4>
+<p><img alt="Demo modul" src="../assets/tehnicka_dokumentacija/demo_pcb.png" /></p>
+<h4 id="matrix-modul_2">Matrix modul</h4>
+<p><img alt="Matrix modul" src="../assets/tehnicka_dokumentacija/matrix_pcb.png" /></p>
+<h4 id="ultrasonicni-modul_2">Ultrasonični modul</h4>
+<p><img alt="Ultrasonični modul" src="../assets/tehnicka_dokumentacija/us_pcb.png" /></p>
+<h3 id="3d-modeli">3D modeli</h3>
+<h4 id="rover-bez-modula">Rover bez modula</h4>
+<p><img alt="Model 1" src="../assets/tehnicka_dokumentacija/model1.png" /></p>
+<h4 id="rover-sa-modulima">Rover sa modulima</h4>
+<p><img alt="Model 2" src="../assets/tehnicka_dokumentacija/model2.png" /></p>
+<h4 id="ultrasonicni-modul_3">Ultrasonični modul</h4>
+<p><img alt="Ultrasonični modul" src="../assets/tehnicka_dokumentacija/us_model.png" /></p>
+<h4 id="demo-modul_3">Demo modul</h4>
+<p><img alt="Demo modul" src="../assets/tehnicka_dokumentacija/demo_model.png" /></p>
+<h4 id="matrix-modul_3">Matrix modul</h4>
+<p><img alt="Matrix modul" src="../assets/tehnicka_dokumentacija/matrix_model.png" /></p>
+<h2 id="proces-izrade">Proces izrade</h2>
+<h3 id="prva-faza-izrada-mobilne-aplikacije">Prva faza: izrada mobilne aplikacije</h3>
+<p>U prvoj fazi razvoja mobilne aplikacije, odlučili smo koristiti Flutter kao razvojno okruženje. Budući da Flutter ne podržava Bluetooth funkcionalnost, bili smo primorani koristiti programski paket flutter_blue_serial. Iako je to bila jedina opcija za integraciju Bluetooth Classic tehnologije, naišli smo na izazov zbog nedostatka dokumentacije. Morali smo temeljiti naše razumijevanje paketa na primjerima i vlastitom istraživanju kako bismo shvatili njegovo funkcioniranje.</p>
+<p>Kako bismo olakšali razvoj ne samo nama već i budućim korisnicima, napisali smo funkcije za upravljanje Bluetooth vezom. Ovo je omogućilo jednostavnije implementiranje Bluetooth komunikacije u našu aplikaciju.</p>
+<p>Za testiranje funkcionalnosti aplikacije, izradili smo malu platformu za "mock-testing". Povezali smo Raspberry Pi Pico mikroupravljač s HC-05 Bluetooth čipom i programirali ga da generira unaprijed definirane poruke i podatke. Ovo testiranje omogućilo nam je provjeru ispravnosti Bluetooth komunikacije u kontroliranom okruženju prije nego što smo se upustili u testiranje s pravim uređajima.</p>
+<h3 id="druga-faza-izrada-upravljackog-koda-na-raspberry-pi-pico-u">Druga faza: izrada upravljačkog koda na Raspberry Pi Pico-u</h3>
+<p>U drugoj fazi razvoja, nakon što smo utvrdili da je većina funkcionalnosti aplikacije spremna za upotrebu, usredotočili smo se na pisanje upravljačkog koda za Raspberry Pi Pico. Budući da veći dio hardvera nije bio dostupan u tom trenutku, pristupili smo programiranju tako što smo kod podijelili u segmente koje smo zasebno testirali.</p>
+<p>Ovaj pristup omogućio nam je temeljito testiranje svake komponente prije nego što smo je integrirali s ostatkom koda. Kada bismo utvrdili da određena komponenta pravilno funkcionira, izolirali bismo je od ostatka koda kako bismo osigurali njenu stabilnost i ispravnost u cjelokupnom sustavu.</p>
+<p>Za testiranje izoliranih dijelova koda koristili smo aplikaciju koja je već bila dostupna. Ovo nam je omogućilo simuliranje stvarnog korisničkog iskustva i provjeru funkcionalnosti upravljačkog koda u kontroliranom okruženju prije nego što smo ga integrirali s ostatkom aplikacije.</p>
+<h3 id="treca-faza-zrada-elektronickih-shema-i-dizajn-pcb-a">Treća faza: zrada elektroničkih shema i dizajn PCB-a</h3>
+<p>Treća faza projekta uključuje izradu elektroničkih shema i dizajn tiskanih pločica (PCB-a) koristeći platformu EasyEDA. Početak ove faze obuhvaća detaljno planiranje i skiciranje elektroničke sheme koja predstavlja logičku strukturu i povezanost svih elektroničkih komponenti u projektu.</p>
+<p>Nakon završetka sheme, proces se nastavlja pretvaranjem shematskog prikaza u fizički dizajn PCB-a unutar iste platforme. Omogućena je automatska konverzija shematskog dijagrama u nacrt PCB-a, nakon kojeg je potrebno ručno prilagođavanje rasporeda komponenti, tragova, slojeva i drugih elemenata kako bi ostvarili traženu funkcionalnost.</p>
+<p>Završni korak u ovoj fazi uključuje pregled i finalizaciju dizajna PCB-a, pri čemu se provjeravaju sve dimenzije, povezanosti i specifikacije komponenti kako bi se osiguralo da je sve u skladu s tehničkim zahtjevima i standardima. Nakon zadovoljavajuće provjere, dizajn se izvozi u standardnom formatu za proizvodnju, poput Gerber datoteka, koje se zatim mogu koristiti za naručivanje gotovih PCB-a od proizvođača.</p>
+<h3 id="cetvrta-faza-3d-modeliranje">Četvrta faza: 3D modeliranje</h3>
+<p>Četvrta faza projekta obuhvaća 3D modeliranje koristeći Onshape, potpuno cloud-bazirana CAD platforma koja omogućava korisnicima izradu preciznih 3D modela komponenata i sklopova unutar samog preglednika. Proces započinje definiranjem i skiciranjem osnovnih oblika i dimenzija svih potrebnih dijelova, uključujući glavno tijelo ROVER-a, nosače, i druge strukturne elemente, a završava izvozom modela u STL formatu, koji je kompatibilan s 3D printerima.</p>
+<h3 id="zavrsni-proizvod">Završni proizvod</h3>
+<p>Kada imamo sve dijelove i potreban kod, bilo je potrebno samo složiti. Ovo je sada spremo za uporabu i daljnje modificiranje.</p>
+<p><img alt="Gotov 1" src="../assets/tehnicka_dokumentacija/gotov1.jpg" /></p>
+<p><img alt="Gotov 2" src="../assets/tehnicka_dokumentacija/gotov2.jpg" /></p>
+<p><img alt="Gotov 3" src="../assets/tehnicka_dokumentacija/gotov3.jpg" /></p>
+<p><img alt="Gotov 4" src="../assets/tehnicka_dokumentacija/gotov4.jpg" /></p>
+<p><img alt="Gotov 5" src="../assets/tehnicka_dokumentacija/gotov5.jpg" /></p>
+<p><img alt="Gotov 6" src="../assets/tehnicka_dokumentacija/gotov6.jpg" /></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Vrati se na vrh
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Kopirano u me\u0111uspremnik", "clipboard.copy": "Kopiraj u me\u0111uspremnik", "search.result.more.one": "1 rezultat na ovoj stranici", "search.result.more.other": "# rezultat(a) na ovoj stranici", "search.result.none": "Ni\u0161ta nije prona\u0111eno", "search.result.one": "1 rezultat pretra\u017eivanja", "search.result.other": "# rezultat(a) pretra\u017eivanja", "search.result.placeholder": "Unesite pojam pretra\u017eivanja", "search.result.term.missing": "Nedostaje", "select.version": "Odabir verzije"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c8d2eff1.min.js"></script>
+      
+    
+  </body>
+</html>
